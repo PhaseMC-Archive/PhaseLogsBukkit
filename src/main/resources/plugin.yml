@@ -1,0 +1,5 @@
+name: PhaseLogs
+main: ${mainClass}
+version: ${version}
+author: JordanPlayz158
+depends: [Vault]
