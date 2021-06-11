@@ -8,6 +8,6 @@ import org.bukkit.event.player.AsyncPlayerChatEvent;
 public class ChatListener implements Listener {
     @EventHandler
     public void onAsyncPlayerChat(AsyncPlayerChatEvent event) {
-        PhaseLogs.sendMessage(PhaseLogs.getChat().getPlayerPrefix(event.getPlayer()) + " " + event.getPlayer().getName() + ": " + event.getMessage());
+        PhaseLogs.sendMessage(PhaseLogs.getChat().getPlayerPrefix(event.getPlayer()).replaceAll(" ", "") + " " + event.getPlayer().getName() + ": " + event.getMessage());
     }
 }
